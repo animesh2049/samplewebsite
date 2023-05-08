@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+}
+
+#mapid {
+  height: calc(100% - 56px);
+}
+
+#mapid .leaflet-popup-pane .btn {
+  color: white;
+}
+
+.navbar-brand {
+  overflow: hidden;
+}
+
+.nav-item {
+  white-space: nowrap;
+}

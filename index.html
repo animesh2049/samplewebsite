@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="origin" />
+
+  <title>ethermap</title>
+
+  
+  <link href="/static/css/bootstrap.css" rel="stylesheet" />
+  <link href="/static/css/landing-page.css" rel="stylesheet" media="screen" />
+  <link href="/static/css/ethermap.css" rel="stylesheet" media="screen" />
+
+  <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/static/vendor/simple-line-icons/css/simple-line-icons.css " rel="stylesheet" type="text/css">
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+
+</head>
+<body class=" f_maps_view f_maps_edit" >
+  
+<!-- 
+<div class="container js-progress" style="height: 100%;">
+  <div class="row px-5" style="height: 100%;">
+    <div class="text-center align-self-center" style="width: 100%">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<nav class="navbar navbar-expand-md navbar-light">
+  <a class="navbar-brand" href="/"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <div class="navbar-nav fade">
+      
+
+  <div class="nav-item mr-md-2 mt-1 mt-sm-0">
+    <button
+      type="button"
+      data-url="/xhr/mytravelmap/settings"
+      class="btn btn-block btn-secondary js-settings"
+      title="Map settings (x)"
+    >Map settings</button>
+  </div>
+  <div class="nav-item mr-md-2 mt-1 mt-sm-0">
+    <button
+      data-url="/xhr/mytravelmap/save-center"
+      data-default="Save current view"
+      data-saving="Saving&hellip;"
+      data-saved="Saved"
+      type="button"
+      class="nav-item btn btn-block btn-secondary js-save-center"
+      title="Save current view (c)"
+    >Save current view</button>
+  </div>
+  <div class="nav-item mr-md-2 mt-1 mt-sm-0">
+    <button
+      type="button"
+      class="btn btn-block btn-secondary"
+      data-toggle="modal" data-target="#share-modal"
+      title="Share (S)"
+    >Share<span class="d-inline d-sm-none"> map</span></button>
+  </div>
+  <div class="nav-item mr-md-2 mt-1 mt-sm-0">
+    <button
+      type="button"
+      class="btn btn-block btn-secondary"
+      data-toggle="modal" data-target="#about-modal"
+      title="About (?)"
+    >About <span class="d-inline d-sm-none"> Ethermap</span></button>
+  </div>
+  <div class="nav-item mr-md-2 mt-1 mt-sm-0">
+    <button
+      type="button"
+      class="btn btn-block btn-secondary js-search"
+      title="Search (s)"
+    >Search</button>
+  </div>
+  <div class="nav-item mt-1 mt-sm-0">
+    <button
+      type="button"
+      data-url="/xhr/mytravelmap/add"
+      data-default="&#x2795; Add marker"
+      data-adding="Click to add a marker&hellip;"
+      class="btn btn-block btn-primary js-add-marker"
+      title="Add marker (a)"
+    ><span class="d-none d-sm-inline">&#x2795; </span>Add marker</button>
+  </div>
+
+    </div>
+  </div>
+</nav>
+
+<div
+  id="mapid"
+  class="d-none"
+  data-url="/xhr/mytravelmap"
+></div>
+
+<div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="about-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="about-modal-label">About Ethermap</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="lead my-3">
+          Ethermap is site that allows anyone from anywhere in the world to
+          <strong>create, view and share</strong> locations with their friends.
+        </p>
+
+        <p>
+          Ethermap is free to use for everyone and free to use for any purpose,
+          including commercially. Ethermap is also free to share with others,
+          free to study <a href="https://gitlab.com/ethermap/ethermap">Ethermap's source code</a>
+          and even free to make your own versions and modifications.
+        </p>
+
+        <p>
+          Ethermap has no adverts and never will have, it's just a financially
+          sustainable service that is provided to improve the world. However,
+          if you find it useful, please consider becoming a
+          <a href="https://sfconservancy.org/supporter/">supporter of the Software
+          Freedom Conservancy</a>, a not-for-profit charity that promotes
+          improves and develops ethical technology.
+        </p>
+
+        <p class="text-center">
+          <a
+            href="/"
+            class="btn btn-primary"
+            target="_new"
+          >Create my own map</a>
+        </p>
+
+        <p class="text-center">
+          <strong>Spot a problem? Have a feature request? Want to contribute? Please review
+          <a href="https://gitlab.com/ethermap/ethermap/issues" target="_new">our outstanding issues</a>.
+          </strong>
+        </p>
+
+        <p class="text-muted text-center">
+          <small>
+          <a href="/privacy">Privacy policy</a>
+          &bull;
+          <a href="/terms">Terms of service</a>
+          <br>
+          Copyright &copy; 2018&mdash;2023
+          <a href="https://chris-lamb.co.uk">Chris Lamb</a>.
+          <br>
+          Released under the terms of the
+          <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU AGPL</a>.
+          (<a href="https://gitlab.com/ethermap/ethermap">Source</a>)
+          </small>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="share-modal" tabindex="-1" role="dialog" aria-labelledby="share-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="share-modal-label">Share map</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <input
+            readonly
+            type="text"
+            class="form-control disabled js-uri"
+            value="http://localhost:8000/m/mytravelmap"
+          >
+          <div class="input-group-append">
+            <button
+              type="button"
+              class="btn btn-secondary js-copy-to-clipboard"
+            >Copy to clipboard</button>
+          </div>
+        </div>
+        <small class="form-text text-muted">
+          Share this map with your friends. Anyone with the URL still be able
+          to view it.
+        </small>
+      </div>
+      <div class="modal-footer">
+        <a href="/m/mytravelmap.json" class="btn btn-secondary">Export GeoJSON</a>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/bootstrap.bundle.js"></script>
+  <script src="/static/js/ethermap.js"></script>
+  
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+<script src="/static/js/mousetrap.js"></script>
+<script>
+  var icons = {
+    
+    
+    "blue": {
+      "url": "/static/img/f_maps_view/marker-blue.png",
+      "name": "Blue"
+    },
+    
+    
+    
+    "black": {
+      "url": "/static/img/f_maps_view/marker-black.png",
+      "name": "Black"
+    },
+    
+    
+    
+    "green": {
+      "url": "/static/img/f_maps_view/marker-green.png",
+      "name": "Green"
+    },
+    
+    
+    
+    "grey": {
+      "url": "/static/img/f_maps_view/marker-grey.png",
+      "name": "Grey"
+    },
+    
+    
+    
+    "orange": {
+      "url": "/static/img/f_maps_view/marker-orange.png",
+      "name": "Orange"
+    },
+    
+    
+    
+    "red": {
+      "url": "/static/img/f_maps_view/marker-red.png",
+      "name": "Red"
+    },
+    
+    
+    
+    "violet": {
+      "url": "/static/img/f_maps_view/marker-violet.png",
+      "name": "Violet"
+    },
+    
+    
+    
+    "yellow": {
+      "url": "/static/img/f_maps_view/marker-yellow.png",
+      "name": "Yellow"
+    }
+    
+    
+  };
+
+  $.sync();
+</script>
+
+</body>
+</html>
