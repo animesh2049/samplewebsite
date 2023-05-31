@@ -524,6 +524,13 @@ var xhrData = {
   },
   "markers": [
       {
+        "lat": 41.38879,
+        "lng": 2.15899,
+        "icon": "blue",
+        "title": "Barcelona",
+        "html": "<div class=\"marker\">\n  \n  <h6>Barcelona</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
           "lat": "46.05062000000004",
           "lng": "14.502820000000042",
           "icon": "blue",
