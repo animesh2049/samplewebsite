@@ -524,6 +524,48 @@ var xhrData = {
   },
   "markers": [
       {
+        "lat": 47.4474328,
+        "lng": 13.8558381,
+        "icon": "blue",
+        "title": "Zipline Stoderzinken",
+        "html": "<div class=\"marker\">\n  \n  <h6>Zipline Stoderzinken</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 48.2206555,
+        "lng": 16.2976604,
+        "icon": "blue",
+        "title": "Vienna",
+        "html": "<div class=\"marker\">\n  \n  <h6>Vienna</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 57.6622546,
+        "lng": -2.5776101,
+        "icon": "blue",
+        "title": "Banff",
+        "html": "<div class=\"marker\">\n  \n  <h6>Banff</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 56.8169309,
+        "lng": -5.1238334,
+        "icon": "blue",
+        "title": "Fort Willian",
+        "html": "<div class=\"marker\">\n  \n  <h6>Fort Willian</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 55.9428437,
+        "lng": -3.2121984,
+        "icon": "blue",
+        "title": "Edinburgh",
+        "html": "<div class=\"marker\">\n  \n  <h6>Edinburgh</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 57.1498945,
+        "lng": -2.1662268,
+        "icon": "blue",
+        "title": "Aberdeen",
+        "html": "<div class=\"marker\">\n  \n  <h6>Aberdeen</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
         "lat": 41.38879,
         "lng": 2.15899,
         "icon": "blue",
