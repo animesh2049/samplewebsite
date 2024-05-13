@@ -524,6 +524,27 @@ var xhrData = {
   },
   "markers": [
       {
+        "lat": 35.9199865,
+        "lng": 14.4791436,
+        "icon": "blue",
+        "title": "Sofia",
+        "html": "<div class=\"marker\">\n  \n  <h6>Sofia</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 48.1423954,
+        "lng": 17.1058828,
+        "icon": "blue",
+        "title": "Sofia",
+        "html": "<div class=\"marker\">\n  \n  <h6>Sofia</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 42.6955288,
+        "lng": 23.2415468,
+        "icon": "blue",
+        "title": "Sofia",
+        "html": "<div class=\"marker\">\n  \n  <h6>Sofia</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
         "lat": 36.1248871,
         "lng": -115.339805,
         "icon": "blue",
