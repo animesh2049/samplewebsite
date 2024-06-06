@@ -524,18 +524,32 @@ var xhrData = {
   },
   "markers": [
       {
+        "lat": 21.2801506,
+        "lng": -157.842998,
+        "icon": "blue",
+        "title": "Hawaii",
+        "html": "<div class=\"marker\">\n  \n  <h6>Hawaii</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
+        "lat": 47.6081204,
+        "lng": -122.3375418,
+        "icon": "blue",
+        "title": "Seattle",
+        "html": "<div class=\"marker\">\n  \n  <h6>Seattle</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+      },
+      {
         "lat": 35.9199865,
         "lng": 14.4791436,
         "icon": "blue",
-        "title": "Sofia",
-        "html": "<div class=\"marker\">\n  \n  <h6>Sofia</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+        "title": "Malta",
+        "html": "<div class=\"marker\">\n  \n  <h6>Malta</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
       },
       {
         "lat": 48.1423954,
         "lng": 17.1058828,
         "icon": "blue",
-        "title": "Sofia",
-        "html": "<div class=\"marker\">\n  \n  <h6>Sofia</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
+        "title": "Bratislava",
+        "html": "<div class=\"marker\">\n  \n  <h6>Bratislava</h6>\n  \n\n  <p></p>\n\n\n  \n  <div class=\"btn-group btn-group-sm\">\n    <a\n      href=\"#\"\n      class=\"btn btn-primary js-edit-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/edit\"\n    >Edit</a>\n    <a\n      href=\"#\"\n      class=\"btn btn-danger js-delete-marker\"\n      data-url=\"/xhr/mytravelmap/iTNQndwQ2te4/delete\"\n      data-confirm=\"Are you sure you wish to remove this marker?\"\n    >Delete</a>\n    \n  </div>\n</div>\n"
       },
       {
         "lat": 42.6955288,
